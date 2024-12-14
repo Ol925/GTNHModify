@@ -1,6 +1,6 @@
 package com.github.wohaopa.GTNHModify.strategies;
 
-import gregtech.api.util.GT_Recipe;
+import gregtech.api.util.GTRecipe;
 
 public class Tenths extends Strategy {
 
@@ -24,12 +24,12 @@ public class Tenths extends Strategy {
     }
 
     @Override
-    public void handler_GT_Recipe(GT_Recipe gtRecipe) {
+    public void handler_GT_Recipe(GTRecipe gtRecipe) {
         gtRecipe.mDuration = gtRecipe.mDuration / 10 == 0 ? 1 : gtRecipe.mDuration / 10;
     }
 
     @Override
-    public void handler_GT_Recipe_AssemblyLine(GT_Recipe.GT_Recipe_AssemblyLine gtRecipe) {
+    public void handler_GT_Recipe_AssemblyLine(GTRecipe.RecipeAssemblyLine gtRecipe) {
         gtRecipe.mDuration = gtRecipe.mDuration / 10 == 0 ? 1 : gtRecipe.mDuration / 10;
     }
 

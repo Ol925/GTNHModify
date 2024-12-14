@@ -6,9 +6,9 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 import com.github.wohaopa.GTNHModify.handler.GregTechHandler;
 
-import gregtech.common.tileentities.machines.basic.GT_MetaTileEntity_Scanner;
+import gregtech.common.tileentities.machines.basic.MTEScanner;
 
-@Mixin(value = GT_MetaTileEntity_Scanner.class, remap = false)
+@Mixin(value = MTEScanner.class, remap = false)
 public abstract class GT_MetaTileEntity_ScannerMixin {
 
     @ModifyArg(method = "checkRecipe", at = @At(value = "INVOKE", target = "calculateOverclockedNess"), index = 1)

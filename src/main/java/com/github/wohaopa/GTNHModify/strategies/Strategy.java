@@ -5,10 +5,10 @@ import java.util.Map;
 
 import net.minecraft.item.ItemStack;
 
-import com.github.technus.tectech.recipe.EyeOfHarmonyRecipe;
 import com.github.wohaopa.GTNHModify.GTNHModifyMod;
 
-import gregtech.api.util.GT_Recipe;
+import gregtech.api.util.GTRecipe;
+import tectech.recipe.EyeOfHarmonyRecipe;
 
 public abstract class Strategy {
 
@@ -57,11 +57,11 @@ public abstract class Strategy {
 
     protected void loaded() {}
 
-    public void handler_GT_Recipe(GT_Recipe gtRecipe) {
+    public void handler_GT_Recipe(GTRecipe gtRecipe) {
 
     }
 
-    public void handler_GT_Recipe_AssemblyLine(GT_Recipe.GT_Recipe_AssemblyLine gtRecipe) {
+    public void handler_GT_Recipe_AssemblyLine(GTRecipe.RecipeAssemblyLine gtRecipe) {
 
     }
 

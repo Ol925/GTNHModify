@@ -3,14 +3,14 @@ package com.github.wohaopa.GTNHModify.strategies;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 
-import gregtech.api.util.GT_Recipe;
+import gregtech.api.util.GTRecipe;
 
 public class Output64 extends Strategy {
 
     protected Output64() {}
 
     @Override
-    public void handler_GT_Recipe(GT_Recipe gtRecipe) {
+    public void handler_GT_Recipe(GTRecipe gtRecipe) {
         if (gtRecipe.mEUt > 1) gtRecipe.mEUt = 1;
         if (gtRecipe.mDuration > 1) gtRecipe.mDuration = 1;
         if (gtRecipe.mInputs != null) {
@@ -45,7 +45,7 @@ public class Output64 extends Strategy {
     }
 
     @Override
-    public void handler_GT_Recipe_AssemblyLine(GT_Recipe.GT_Recipe_AssemblyLine gtRecipe) {
+    public void handler_GT_Recipe_AssemblyLine(GTRecipe.RecipeAssemblyLine gtRecipe) {
         if (gtRecipe.mEUt > 1) gtRecipe.mEUt = 1;
         if (gtRecipe.mDuration > 1) gtRecipe.mDuration = 1;
         if (gtRecipe.mInputs != null) {
